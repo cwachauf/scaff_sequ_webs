@@ -23,7 +23,6 @@ public class SimpleRandomSequ
         
 		for(int i=1;i<length;i++)
 		{
-			
 			DistributedRandomNumberGenerator dng = new DistributedRandomNumberGenerator();
 			dng.addNumber(0, trans_mat[letter_indices[i-1]][0]);
 			dng.addNumber(1, trans_mat[letter_indices[i-1]][1]);
@@ -41,12 +40,17 @@ public class SimpleRandomSequ
 			//System.out.println(index);
 			
 		}
-		System.out.println(sequence);
+		//System.out.println(sequence);
 		/*System.out.println(cnt[0]);
 		System.out.println(cnt[1]);
 		System.out.println(cnt[2]);
 		System.out.println(cnt[3]);*/
 		
+	}
+	
+	public String GetSequence()
+	{
+		return this.sequence;
 	}
 	
 	
